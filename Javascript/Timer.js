@@ -12,10 +12,10 @@ function updateCountdown() {
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
     if (difference >= 0) {
-        document.getElementById("Counter_Tage").textContent = `${days} Tage`;
-        document.getElementById("Counter_Stunden").textContent = `${hours} Std.`;
-        document.getElementById("Counter_Minuten").textContent = `${minutes} Min.`;
-        document.getElementById("Counter_Sekunden").textContent = `${seconds} Sek.`;
+        document.getElementById("Counter_Tage").textContent = `${days}`;
+        document.getElementById("Counter_Stunden").textContent = `${hours}`;
+        document.getElementById("Counter_Minuten").textContent = `${minutes}`;
+        document.getElementById("Counter_Sekunden").textContent = `${seconds}`;
         document.getElementById("LetztePrüfung").textContent = "in";
     } else {
         const negativeDifference = Math.abs(difference);
@@ -24,10 +24,10 @@ function updateCountdown() {
         const negativeMinutes = Math.floor((negativeDifference % (1000 * 60 * 60)) / (1000 * 60));
         const negativeSeconds = Math.floor((negativeDifference % (1000 * 60)) / 1000);
 
-        document.getElementById("Counter_Tage").textContent = `${negativeDays} Tage`;
-        document.getElementById("Counter_Stunden").textContent = `${negativeHours} Std.`;
-        document.getElementById("Counter_Minuten").textContent = `${negativeMinutes} Min.`;
-        document.getElementById("Counter_Sekunden").textContent = `${negativeSeconds} Sek.`;
+        document.getElementById("Counter_Tage").textContent = `${negativeDays}`;
+        document.getElementById("Counter_Stunden").textContent = `${negativeHours}`;
+        document.getElementById("Counter_Minuten").textContent = `${negativeMinutes}`;
+        document.getElementById("Counter_Sekunden").textContent = `${negativeSeconds}`;
         document.getElementById("LetztePrüfung").textContent = "vor";
     }
 }
