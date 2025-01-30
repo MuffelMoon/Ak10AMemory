@@ -1315,7 +1315,6 @@
     margin-top: 297px;
     margin-bottom: 47px;
   }
-}.MehrVonUnsButton{
 }
 
 #countdown{
@@ -1328,6 +1327,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  list-style: none;
 }
 #countdown li{
   margin: 0 20px;
