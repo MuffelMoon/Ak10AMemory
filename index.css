@@ -1319,6 +1319,9 @@
 }
 
 #countdown{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   height: 80%;
   width: 100%;
   display: flex;
@@ -1327,12 +1330,11 @@
   font-weight: 600;
 }
 #countdown li{
-  margin: 0 5px;
+  margin: 0 20px;
 }
 #TimerListe{
   list-style: none;
   display: flex;
-  gap: 30px;
   padding: 15px 45px 15px 15px;
   border-radius: 15px;
 }
