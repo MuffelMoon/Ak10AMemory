@@ -1317,3 +1317,32 @@
   }
 }.MehrVonUnsButton{
 }
+
+#countdown{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+#countdown li{
+  margin: 0 5px;
+}
+#TimerListe{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 15px 45px 15px 15px;
+  border-radius: 15px;
+}
+.ZeitEndung{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85px;
+  font-weight: 300;
+}
+.Zeit{
+  font-size: 50px;
+}
